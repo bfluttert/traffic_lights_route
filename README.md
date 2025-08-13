@@ -9,6 +9,7 @@ This repository contains a simple Jupyter notebook that plans routes using open 
 - Routing is retrieved from the public [OSRM](http://project-osrm.org/) API.
 - Traffic lights along the route are queried live from the [Overpass API](https://overpass-api.de/) and displayed on the map.
 
+
 ## Usage
 
 1. Install dependencies:
@@ -17,10 +18,16 @@ This repository contains a simple Jupyter notebook that plans routes using open 
    pip install -r requirements.txt
    ```
 
+
 2. Launch Jupyter and open the notebook:
+
+
+3. Launch Jupyter and open the notebook:
+
 
    ```bash
    jupyter notebook notebooks/traffic_lights_route.ipynb
    ```
 
 3. Type the start and destination addresses in the provided boxes and click **Show Route** to display the map with the route and nearby traffic light markers fetched from Overpass.
+
