@@ -3,3 +3,4 @@ geopy
 gpxpy
 ipywidgets
 requests
+notebook
