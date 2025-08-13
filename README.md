@@ -7,7 +7,8 @@ This repository contains a simple Jupyter notebook that plans routes using open 
 - Enter start and end addresses in a notebook interface.
 - Geocoding is performed with [OpenStreetMap Nominatim](https://nominatim.openstreetmap.org/).
 - Routing is retrieved from the public [OSRM](http://project-osrm.org/) API.
-- Traffic lights are loaded from a local GPX or GeoJSON file and displayed on the map.
+- Traffic lights along the route are queried live from the [Overpass API](https://overpass-api.de/) and displayed on the map.
+
 
 ## Usage
 
@@ -17,14 +18,16 @@ This repository contains a simple Jupyter notebook that plans routes using open 
    pip install -r requirements.txt
    ```
 
-2. Add your traffic light file to the `data` folder and name it `traffic_lights.geojson` or `traffic_lights.gpx`.
+
+2. Launch Jupyter and open the notebook:
+
 
 3. Launch Jupyter and open the notebook:
+
 
    ```bash
    jupyter notebook notebooks/traffic_lights_route.ipynb
    ```
 
-4. Type the start and destination addresses in the provided boxes and click **Show Route** to display the map with the route and traffic light markers.
+3. Type the start and destination addresses in the provided boxes and click **Show Route** to display the map with the route and nearby traffic light markers fetched from Overpass.
 
-An example GeoJSON file is provided in `data/traffic_lights_sample.geojson` for testing.
