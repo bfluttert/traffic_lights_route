@@ -1,5 +1,4 @@
 folium
 geopy
-gpxpy
 ipywidgets
 requests
