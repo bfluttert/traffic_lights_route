@@ -1,0 +1,10 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"name": "Sample Traffic Light"},
+      "geometry": {"type": "Point", "coordinates": [4.899431, 52.379189]}
+    }
+  ]
+}
